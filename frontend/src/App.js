@@ -1,24 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import Header from './Header';
+import './global.css';
+
+import Routes from './routes';
 
 // JSX (JavaScript XML)
 
 function App() {
-    const [count, setCount] = useState(0);
-
-    // Array [valor, funcaoDeAtualizacao]
-
-    function increment() {
-        setCount(count + 1);
-    }
-
     return (
-        <div>
-            <Header title={"Contador: " + count} />
-            
-            <button onClick={increment}>Incrementar</button>
-        </div>
+        <Routes />
     );
 }
 
